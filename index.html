@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
 <title>Soccer Skills Game - World Cup</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="description" content="The online soccer game featuring the World Cup!">
@@ -116,22 +118,6 @@ mdown=true;
 function frup(evt) { mdown=false; }
 
 
-function init() { PokiSDK.init().then(startLoading).catch(() => { startLoading(); }); }
-
-function startLoading() { gamerun(); PokiSDK.gameLoadingStart(); }
-
-function loadingComplete() { PokiSDK.gameLoadingFinished(); }
-
-function gameplayStart() { PokiSDK.gameplayStart(); }
-
-function gameplayStop() { PokiSDK.gameplayStop(); }
-
-function showHalftimeAd() { PokiSDK.gameplayStop(); adpause=true; PokiSDK.commercialBreak().then(() => { PokiSDK.gameplayStart(); adpause=false; }); }
-
-function showLoadingAd() { adpause=true; PokiSDK.commercialBreak().then(() => { adpause=false; }); }
-
-function showRewardAd() { adpause=true; PokiSDK.rewardedBreak().then((success) => { if(success) { cntimeout=3; } else { cntimeout=2; } pointcnt=0; adpause=false; }); }
-
 
 </script>
 
@@ -161,4 +147,4 @@ var _0x4e87=['LnBva2kuY29t','bG9jYWxob3N0','139KObtWR','6505XySddN','1187125jopC
 
 
 
-<iframe style="display: none;"></iframe></body></html>
+</body></html>
